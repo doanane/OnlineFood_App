@@ -1,0 +1,18 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('registerUser/', views.registerUser, name='registerUser'),  # ✅ correct
+]
+]
+
+    # path('registerVendor/', views.registerVendor, name='registerVendor'),
+    # path('login/', views.login, name='login'),
+    # path('logout/', views.logout, name='logout'),
+
+    # path("api/accounts/", include("accounts.urls")),
+
+]
+
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
