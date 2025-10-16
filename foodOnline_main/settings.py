@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # installed by me
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -128,6 +131,11 @@ STATICFILES_DIRS = [
     'foodOnline_main/static'
 ]
 
+#  media config
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTH_USER_MODEL = 'accounts.User'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
